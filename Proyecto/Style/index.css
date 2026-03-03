@@ -1,0 +1,103 @@
+:root {
+    --celeste: #00b4d8;
+    --gris-oscuro: #1f1f1f;
+    --gris-claro: #e5e5e5;
+    --blanco: #ffffff;
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-img {
+    width: 50px;     /* cambia de tamaño del logo */
+    height: auto;
+}
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--celeste);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background:
+        linear-gradient(rgba(0,180,216,0.6), rgba(31,31,31,0.8)),
+        url("img/fondNova Market.pngo.jpg"); background-size: cover; background-position: center; background-attachment: fixed;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+}
+.logo {
+    color: var(--celeste);
+}
+.search-container input {
+    padding: 8px;
+}
+.search-container button {
+    padding: 8px;
+    background-color: var(--celeste);
+    border: none;
+    cursor: pointer;
+}
+.login-btn {
+    background-color: var(--celeste);
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.product-card {
+    background-color: var(--gris-oscuro);  padding: 15px;  border-radius: 10px;  text-align: center;  color: white;
+    transition: 0.3s;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: var(--gris-oscuro);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--celeste);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
